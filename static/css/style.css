@@ -13,10 +13,16 @@ body {
     padding: 10px;
     margin-top: 0px;
     margin-bottom: 0px;
-    margin-left: 475px;
+    margin-left: 467px;
+    margin-right: 467px;
 }
 
 .navigation_top_bar {
     display: flex;
     align-items: center;
+}
+
+.settings_icon {
+    width: 60px;
+    height: auto;
 }
