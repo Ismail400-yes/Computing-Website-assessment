@@ -50,12 +50,12 @@ body {
 }
 
 .friend_plus {
-    width: 35px;
-    height: 40px;
+    width: 40px;
+    height: 45px;
     margin-top: 15px;
     margin-bottom: 0px;
     margin-right: 0px;
-    margin-left: 5px;
+    margin-left: 10px;
 }
 
 .invite_friends_title {
@@ -65,6 +65,6 @@ body {
 }
 
 .typing_friend_add {
-    padding: 5px 50px;
+    padding: 10px 50px;
     text-align: left;
 }
