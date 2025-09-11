@@ -58,3 +58,8 @@ body {
     text-align: left;
     color: white;
 }
+
+.add_list {
+    display: inline-block;
+    flex-direction: row;
+}
