@@ -45,12 +45,14 @@ body {
 .friends_list_top_bar {
     display: flex;
     flex-direction: row;
+    margin-bottom: 0px;
+    border-bottom: 5px solid palevioletred;
 }
 
 .friends_list_add_type {
     display: flex;
     flex-direction: column;
-    margin-left: 400px;
+    margin-left: 455px;
     margin-top: 0px;
     margin-bottom: 10px;
 }
@@ -65,7 +67,7 @@ body {
 }
 
 .invite_friends_title {
-    text-align: left;
+    text-align: center;
     color: white;
     margin: 0px;
 }
@@ -73,4 +75,19 @@ body {
 .typing_friend_add {
     padding: 8px 50px;
     text-align: left;
+}
+
+.friends_title {
+    display: flex;
+    color: white;
+}
+
+.friends_title_name_1 {
+    margin: 20px 170px;
+    border-right: 5px solid palevioletred;
+    width: 300px;
+}
+
+.friends_title_name_2 {
+    margin: 20px 170px;
 }
