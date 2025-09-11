@@ -50,9 +50,16 @@ body {
 }
 
 .friend_plus {
-    width: 35px;
+    width: 40px;
     height: 40px;
-    margin-top: 0px;
+    border-radius: 50%;
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    cursor: pointer;
+    border: 1px solid #ccc;
     margin-bottom: 0px;
     margin-right: 0px;
     margin-left: 5px;
