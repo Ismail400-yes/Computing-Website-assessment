@@ -57,10 +57,11 @@ body {
 .invite_friends_title {
     text-align: left;
     color: white;
+    margin: 0px;
 }
 
 .add_list {
     display: inline-block;
-    vertical-align: top;
+    vertical-align: auto;
     flex-direction: row;
 }
