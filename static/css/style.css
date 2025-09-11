@@ -32,5 +32,6 @@ body {
 }
 
 .chats_side_bar {  
-
+    display: flex;
+    flex-direction: column;
 }
