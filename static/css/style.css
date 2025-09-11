@@ -79,15 +79,19 @@ body {
 
 .friends_title {
     display: flex;
-    color: white;
 }
 
 .friends_title_name_1 {
-    margin: 20px 170px;
-    border-right: 5px solid palevioletred;
-    width: 300px;
+    margin: 20px 185px;
+    color: white;
 }
 
 .friends_title_name_2 {
-    margin: 20px 170px;
+    margin: 20px 185px;
+    color: white;
+}
+
+.title_split {
+    width: 5px;
+    height: 200px;
 }
