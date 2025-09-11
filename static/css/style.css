@@ -52,15 +52,15 @@ body {
 .friend_plus {
     width: 35px;
     height: 40px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    margin-left: 5px;
 }
 
 .invite_friends_title {
     text-align: left;
     color: white;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    margin-right: 0px;
-    margin-left: 5px;
 }
 
 .add_list {
