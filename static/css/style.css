@@ -44,6 +44,7 @@ body {
 .friends_list_add_type {
     display: flex;
     flex-direction: column;
+    margin: 0px 10px;
 }
 
 .friend_plus {
@@ -52,5 +53,6 @@ body {
 }
 
 .invite_friends_title {
+    text-align: left;
     color: white;
 }
