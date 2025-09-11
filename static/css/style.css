@@ -100,3 +100,8 @@ body {
     max-width: 5px;
     height: 543.5px;
 }
+
+.heading_1 {
+    display: flex;
+    flex-direction: column;
+}
