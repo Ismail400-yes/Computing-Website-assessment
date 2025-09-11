@@ -61,7 +61,8 @@ body {
 }
 
 .add_list {
-    display: inline-block;
+    display: flex;
+    align-items: center;
     vertical-align: auto;
     flex-direction: row;
 }
