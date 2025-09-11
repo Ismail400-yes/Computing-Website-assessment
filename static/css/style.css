@@ -61,6 +61,7 @@ body {
 .invite_friends_title {
     text-align: left;
     color: white;
+    margin: 0px;
 }
 
 .add_list {
