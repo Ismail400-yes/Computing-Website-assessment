@@ -50,8 +50,9 @@ body {
 }
 
 .friend_plus {
-    width: 45px;
-    height: 50px;
+    width: 35px;
+    height: 40px;
+    margin-top: 15px;
     margin-bottom: 0px;
     margin-right: 0px;
     margin-left: 5px;
@@ -61,11 +62,6 @@ body {
     text-align: left;
     color: white;
     margin: 0px;
-}
-
-.add_list {
-    display: flex;
-    align-items: center;
 }
 
 .typing_friend_add {
