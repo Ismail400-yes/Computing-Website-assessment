@@ -67,7 +67,6 @@ body {
 .add_list {
     display: flex;
     align-items: center;
-    vertical-align: auto;
     flex-direction: row;
 }
 
