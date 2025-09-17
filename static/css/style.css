@@ -115,3 +115,7 @@ body {
     display: flex;
     flex-direction: column;
 }
+
+.add_friend_button {
+    padding: 0px;
+}
