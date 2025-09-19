@@ -135,5 +135,7 @@ body {
 .home_page_logo_separate {
     width: 5px;
     height: 82px;
+    margin-left: 10px;
+    margin-bottom: 0px;
 }
 
