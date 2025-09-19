@@ -140,3 +140,21 @@ body {
     margin-bottom: 0px;
 }
 
+.chat_logos_split {
+    width: 5px;
+    height: 400px;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+.chats_side_bar {
+    display: flex;
+}
+
+.chat_logos {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    margin-top: 0px;
+}
+
