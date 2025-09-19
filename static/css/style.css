@@ -123,3 +123,11 @@ body {
 .settings_page {
     background-color: black;
 }
+
+.online_tag {
+    color: white;
+}
+
+.online_button {
+    display: flex;
+}
