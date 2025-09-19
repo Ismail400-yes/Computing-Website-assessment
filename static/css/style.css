@@ -131,3 +131,9 @@ body {
 .online_button {
     display: flex;
 }
+
+.home_page_logo_separate {
+    width: 5px;
+    height: 82px;
+}
+
