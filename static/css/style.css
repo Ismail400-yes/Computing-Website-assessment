@@ -119,3 +119,7 @@ body {
 .add_friend_button {
     padding: 0px;
 }
+
+.settings_page {
+    background-color: black;
+}
