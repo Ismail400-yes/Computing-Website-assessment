@@ -1,0 +1,16 @@
+.settings_page {
+    background-color: black;
+}
+
+.logo_settings {
+    width: 60px;
+    height: auto;
+}
+
+.online_button {
+    display: flex;
+}
+
+.online_tag {
+    color: white;
+}

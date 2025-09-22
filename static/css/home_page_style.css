@@ -1,5 +1,13 @@
-body {
+.home_page{
     background-color: black;
+}
+
+.navigation_top_bar {
+    display: flex;
+    align-items: center;
+    border-bottom: 5px solid palevioletred;
+    padding-bottom: 0px;
+    padding-top: 0px;
 }
 
 .logo {
@@ -7,10 +15,11 @@ body {
     height: auto;
 }
 
-.logo_friends {
-    width: 60px;
-    height: auto;
-    margin-bottom: 10px;
+.home_page_logo_separate {
+    width: 5px;
+    height: 80px;
+    margin-left: 10px;
+    margin-bottom: 0px;
 }
 
 .friend_request_and_pending_button {
@@ -25,14 +34,6 @@ body {
     text-align: center;
 }
 
-.navigation_top_bar {
-    display: flex;
-    align-items: center;
-    border-bottom: 5px solid palevioletred;
-    padding-bottom: 0px;
-    padding-top: 0px;
-}
-
 .settings_icon {
     width: 60px;
     height: auto;
@@ -43,101 +44,11 @@ body {
     flex-direction: column;
 }
 
-.friends_list_top_bar {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 0px;
-    border-bottom: 5px solid palevioletred;
-}
-
-.friends_list_add_type {
+.chat_logos {
     display: flex;
     flex-direction: column;
-    margin-left: 455px;
+    margin-right: 10px;
     margin-top: 0px;
-    margin-bottom: 10px;
-}
-
-.friend_plus {
-    width: 40px;
-    height: 40px;
-    margin-top: 25px;
-    margin-bottom: 15px;
-    margin-right: 0px;
-    margin-left: 5px;
-}
-
-.invite_friends_title {
-    text-align: center;
-    color: white;
-    margin: 0px;
-}
-
-.typing_friend_add {
-    padding: 8px 50px;
-    text-align: left;
-}
-
-.friends_title {
-    display: flex;
-}
-
-.friends_title_name_1 {
-    margin: 20px 185px;
-    color: white;
-}
-
-.title_1_heading {
-    width: 628.9px;
-    max-height: 5px;
-}
-
-.friends_title_name_2 {
-    margin: 20px 180px;
-    color: white;
-}
-
-.title_2_heading {
-    width: 615px;
-    max-height: 5px;
-}
-
-.title_split {
-    max-width: 5px;
-    height: 82px;
-}
-
-.heading_1 {
-    display: flex;
-    flex-direction: column;
-}
-
-.heading_2 {
-    display: flex;
-    flex-direction: column;
-}
-
-.add_friend_button {
-    padding: 0px;
-}
-
-.settings_page {
-    background-color: black;
-}
-
-.online_tag {
-    color: white;
-}
-
-.online_button {
-    display: flex;
-}
-
-.home_page_logo_separate {
-    width: 5px;
-    height: 80px;
-    margin-left: 10px;
-    margin-bottom: 0px;
 }
 
 .chat_logos_split {
@@ -146,15 +57,3 @@ body {
     margin-left: 0px;
     margin-top: 0px;
 }
-
-.chats_side_bar {
-    display: flex;
-}
-
-.chat_logos {
-    display: flex;
-    flex-direction: column;
-    margin-right: 10px;
-    margin-top: 0px;
-}
-

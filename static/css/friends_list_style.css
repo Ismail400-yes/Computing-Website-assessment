@@ -1,0 +1,83 @@
+.friends_list_body {
+    background-color: black;
+}
+
+.logo_friends {
+    width: 60px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.friends_list_top_bar {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0px;
+    border-bottom: 5px solid palevioletred;
+}
+
+.friends_list_add_type {
+    display: flex;
+    flex-direction: column;
+    margin-left: 455px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.friend_plus {
+    width: 40px;
+    height: 40px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    margin-right: 0px;
+    margin-left: 5px;
+}
+
+.invite_friends_title {
+    text-align: center;
+    color: white;
+    margin: 0px;
+}
+
+.typing_friend_add {
+    padding: 8px 50px;
+    text-align: left;
+}
+
+.friends_title {
+    display: flex;
+}
+
+.heading_1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.friends_title_name_1 {
+    margin: 20px 185px;
+    color: white;
+}
+
+.title_1_heading {
+    width: 628.9px;
+    max-height: 5px;
+}
+
+.heading_2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.friends_title_name_2 {
+    margin: 20px 180px;
+    color: white;
+}
+
+.title_2_heading {
+    width: 615px;
+    max-height: 5px;
+}
+
+.title_split {
+    max-width: 5px;
+    height: 82px;
+}
