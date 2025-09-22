@@ -15,5 +15,9 @@ def friends_list():
 def settings_page():
     return render_template('settings_page.html')
 
+@app.route('/login_page')
+def settings_page():
+    return render_template('login_page.html')
+
 if __name__ == '__main__':
     app.run(debug=True)
