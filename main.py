@@ -19,5 +19,15 @@ def settings_page():
 def login_page():
     return render_template('login_page.html')
 
+@app.route('/')
+def index():
+    conn = sqlite3.connect('data_source.db')
+    cursor = conn.cursor()
+    cursor.execute("SELECT 'Chat Image Link' FROM conversation-table")
+    products = cursor.fetchall()
+    conn.close()
+    return render_template('home_page.html', chat_pfp=chatpfp)
+
+
 if __name__ == '__main__':
     app.run(debug=True)
