@@ -1,5 +1,7 @@
-import sqlite3
+import sqlite3 as sql
 from flask import Flask, render_template
+from flask import request
+import database_manager
 
 app = Flask(__name__, template_folder='templates_1')
 
@@ -19,15 +21,14 @@ def settings_page():
 def login_page():
     return render_template('login_page.html')
 
-@app.route('/')
+@app.route('/home_page.html', methods=['GET'])
+@app.route('/', methods=['POST', 'GET'])
 def index():
-    conn = sqlite3.connect('database/data_source.db')
-    cursor = conn.cursor()
-    cursor.execute("SELECT 'Chat Image Link', Title FROM conversation-table")
-    conversation_table = cursor.fetchall()
-    conn.close()
-    return render_template('home_page.html', chat_pfp=conversation_table)
+  return render_template('/home_page.html')
 
+def index():
+   data = database_manager.listExtension()
+   return render_template('/index.html', content=data)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+  app.run(debug=True, host='0.0.0.0', port=5000)

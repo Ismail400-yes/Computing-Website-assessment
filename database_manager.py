@@ -3,6 +3,6 @@ import sqlite3 as sql
 def listExtension():
   con = sql.connect("database/data_source.db")
   cur = con.cursor()
-  data = cur.execute("SELECT 'Chat Image Link', Title FROM conversation-table").fetchall()
+  data = cur.execute("SELECT Chat_Image_Link, Title FROM conversation-table").fetchall()
   con.close()
   return data
