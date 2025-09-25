@@ -21,7 +21,7 @@ def login_page():
 
 @app.route('/')
 def index():
-    conn = sqlite3.connect('data_source.db')
+    conn = sqlite3.connect('database/data_source.db')
     cursor = conn.cursor()
     cursor.execute("SELECT 'Chat Image Link', Title FROM conversation-table")
     conversation_table = cursor.fetchall()
