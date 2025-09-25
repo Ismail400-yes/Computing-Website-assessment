@@ -14,8 +14,8 @@
     </div>
     <div class = "chats_side_bar">
         <div class = "chat_logos">
-            {% for Chat Image Link in chat_pfp %}
-                <img src="{{ Chat Image Link }}" alt="{{Title}}" class = "chat_images">
+            {% for Chat_Image_Link, Title in chat_pfp %}
+                <img src="{{ Chat_Image_Link }}" alt="{{Title}}" class = "chat_images">
             {% endfor %}
         </div>
         <img src = "static/image/pale-violet-red_color.png" alt = "line" class = "chat_logos_split">
