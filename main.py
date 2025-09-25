@@ -23,10 +23,10 @@ def login_page():
 def index():
     conn = sqlite3.connect('data_source.db')
     cursor = conn.cursor()
-    cursor.execute("SELECT 'Chat Image Link' FROM conversation-table")
-    products = cursor.fetchall()
+    cursor.execute("SELECT 'Chat Image Link', Title FROM conversation-table")
+    conversation_table = cursor.fetchall()
     conn.close()
-    return render_template('home_page.html', chat_pfp=chatpfp)
+    return render_template('home_page.html', chat_pfp=conversation_table)
 
 
 if __name__ == '__main__':
