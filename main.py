@@ -28,7 +28,7 @@ def index():
 
 def index():
    data = database_manager.listExtension()
-   return render_template('/index.html', content=data)
+   return render_template('/home_page.html', chat_pfp=data)
 
 if __name__ == '__main__':
   app.run(debug=True, host='0.0.0.0', port=5000)
