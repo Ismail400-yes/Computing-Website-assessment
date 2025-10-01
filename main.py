@@ -9,7 +9,7 @@ app = Flask(__name__, template_folder='templates_1')
 def index():
     page = int(request.args.get('page', 1))
     data = database_manager.listExtension(page=page)
-    return render_template('home_page.html', chat_pfp=data)
+    return render_template('home_page.html', chat_pfp=data, page=page)
 
 @app.route('/friends_list')
 def friends_list():
