@@ -1,4 +1,3 @@
-import sqlite3 as sql
 from flask import Flask, render_template
 from flask import request
 import database_manager
