@@ -23,8 +23,6 @@ def login_page():
 
 @app.route('/home_page.html', methods=['GET'])
 @app.route('/', methods=['POST', 'GET'])
-def index():
-  return render_template('/home_page.html')
 
 def index():
    data = database_manager.listExtension()
