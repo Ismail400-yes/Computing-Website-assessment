@@ -4,81 +4,36 @@
     <meta charset="UTF-8">
     <title>Gacha Gambling</title>
     <link rel="stylesheet" href="static/css/home_page_style.css">
-<style>
-/* Simple pagination styling (optional, can move to CSS file) */
-.pagination_buttons {
-margin-top: 20px;
-text-align: center;
-}
-.pagination_buttons a {
-padding: 8px 16px;
-margin: 0 5px;
-background-color: #d87093;
-color: white;
-border-radius: 5px;
-}
-.pagination_buttons a:hover {
-background-color: #c65c81;
-}
-</style>
 </head>
 
 <body class="home_page">
 <!-- Top Navigation Bar -->
-<div class="navigation_top_bar">
-<a href="/"><img src="static/logo/logo.png" alt="Gacha Gambling Logo" class="logo"></a>
-<img src="static/image/pale-violet-red_color.png" alt="line" class="home_page_logo_separate">
-<a href="/friends_list" class="friend_request_and_pending_button">Friend Requests & Pending</a>
-<a href="/settings_page"><img src="static/image/settings.png" alt="Settings" class="settings_icon"></a>
-</div>
-
-<div class="chats_side_bar">
-<div class="chat_logos">
-{% for item in chat_pfp %}
-<div class="chat_item">
-<img src="{{ item.image }}" alt="{{ item.title }}" class="chat_images">
-<p>{{ item.title }}</p>
-</div>
-{% endfor %}
-</div>
-
-<div class="pagination_buttons">
-{% if page > 1 %}
-<a href="/?page={{ page - 1 }}">Previous</a>
-{% endif %}
-{% if chat_pfp|length == 5 %}
-<a href="/?page={{ page + 1 }}">Next</a>
-{% endif %}
-</div>
-
-<img src="static/image/pale-violet-red_color.png" alt="line" class="chat_logos_split">
-</div>
+    <div class="navigation_top_bar">
+        <a href="/"><img src="static/logo/logo.png" alt="Gacha Gambling Logo" class="logo"></a>
+        <img src="static/image/pale-violet-red_color.png" alt="line" class="home_page_logo_separate">
+        <a href="/friends_list" class="friend_request_and_pending_button">Friend Requests & Pending</a>
+        <a href="/settings_page"><img src="static/image/settings.png" alt="Settings" class="settings_icon"></a>
+    </div>
+    <div class="chats_side_bar">
+        <div class="pagination_buttons">
+            {% if page > 1 %}
+            <a href="/?page={{ page - 1 }}">Previous</a>
+            {% endif %}
+        </div>
+        <div class="chat_logos">
+            {% for item in chat_pfp %}
+            <div class="chat_item">
+                <img src="{{ item.image }}" alt="{{ item.title }}" class="chat_images">
+                <p>{{ item.title }}</p>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="pagination_buttons">
+            {% if chat_pfp|length == 5 %}
+            <a href="/?page={{ page + 1 }}">Next</a>
+            {% endif %}
+        </div>
+        <img src="static/image/pale-violet-red_color.png" alt="line" class="chat_logos_split">
+    </div>
 </body>
 </html>
-
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Gacha Gambling</title>
-    <link rel = "stylesheet" href = "static/css/home_page_style.css">
-</head>
-
-<body class = "home_page">
-    <div class = "navigation_top_bar">   
-        <a href = "/"><img src = "static/logo/logo.png" alt = "Gacha Gambling Logo" class = "logo"></a>
-        <img src = "static/image/pale-violet-red_color.png" alt = "line" class = "home_page_logo_separate">
-        <a href="/friends_list" class = "friend_request_and_pending_button">Friend Requests & Pending</a>
-        <a href = "/settings_page"><img src = "static/image/settings.png" alt = "Settings" class = "settings_icon"></a>
-    </div>
-    <div class = "chats_side_bar">
-        <div class = "chat_logos">
-            <button>previous</button>
-            {% for Chat_Image_Link, Title in chat_pfp %}
-                <img src="{{ Chat_Image_Link }}" alt="{{Title}}" class = "chat_images">
-            {% endfor %}
-            <button>next</button>
-        </div>
-        <img src = "static/image/pale-violet-red_color.png" alt = "line" class = "chat_logos_split">
-    </div>
-</body>
-</html> -->
