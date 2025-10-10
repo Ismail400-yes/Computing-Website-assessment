@@ -50,6 +50,14 @@
     margin-top: 0px;
 }
 
+.chat_images {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 .chat_logos_split {
     width: 5px;
     height: 400px;
