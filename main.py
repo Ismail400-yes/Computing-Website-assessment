@@ -5,7 +5,7 @@ import database_manager
 app = Flask(__name__, template_folder='templates_1')
 app.secret_key = 'happy'
 
-@app.route('/home_page')
+@app.route('/')
 def home_page():
     return render_template('home_page.html')
 
@@ -15,7 +15,7 @@ def index():
     data = database_manager.listExtension(page=page)
     return render_template('home_page.html', chat_pfp=data, page=page)
 
-@app.route('/', methods=['GET', 'POST'])
+@app.route('/login_page', methods=['GET', 'POST'])
 def login():
     if request.method == 'POST':
         email_input = request.form['email'].strip()
@@ -49,7 +49,7 @@ def friends_list():
 def settings_page():
     return render_template('settings_page.html')
 
-@app.route('/')
+@app.route('/login_page')
 def login_page():
     return render_template('login_page.html')
 
