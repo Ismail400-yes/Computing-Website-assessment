@@ -1,6 +1,5 @@
 import sqlite3 as sql
-from flask import Flask, render_template
-from flask import request
+from flask import Flask, render_template, request
 import database_manager
 
 app = Flask(__name__, template_folder='templates_1')
