@@ -26,7 +26,7 @@ def login():
         cursor = conn.cursor()
 
         # Check for matching email and password
-        cursor.execute("SELECT * FROM 'user-table' WHERE Email = ? AND Password = ?", (email_input, password_input))
+        cursor.execute("SELECT * FROM user-table WHERE Email = ? AND Password = ?", (email_input, password_input))
         result = cursor.fetchone()
         conn.close()
 
@@ -36,7 +36,7 @@ def login():
         else:
             # No match — ask to retry
             flash("Invalid username or password. Please try again.")
-            return render_template('login_page.html')
+            return redirect('/')
 
     return render_template('login_page.html')  # Show login form
 
