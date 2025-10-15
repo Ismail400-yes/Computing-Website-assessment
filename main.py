@@ -14,14 +14,12 @@ def index():
 @app.route('/', methods=['GET', 'POST'])
 def login():
     if request.method == 'POST':
-        email_input = request.form['email'].strip()
-        password_input = request.form['password'].strip()
+        email_input = request.form.get['email'].strip()
+        password_input = request.form.get['password'].strip()
 
-        # Connect to SQLite
         conn = sql.connect('database/data_source.db')
         cursor = conn.cursor()
 
-        # Check for matching email and password
         query = """
         SELECT Email, Password
         FROM user_table
