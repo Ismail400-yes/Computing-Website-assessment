@@ -23,8 +23,8 @@ def login():
         # Check for matching email and password
         query = """
         SELECT Email, Password
-        FROM "user_table"
-        Email ? Password ?
+        FROM user_table
+        WHERE Email = ? AND Password = ?
         """
         cursor.execute(query, (email_input, password_input))
         result = cursor.fetchone()
