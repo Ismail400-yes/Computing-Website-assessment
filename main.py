@@ -17,11 +17,11 @@ def login():
         password_input = request.form['password'].strip()
 
         # Connect to SQLite
-        conn = sql.connect('data_source.db')
+        conn = sql.connect('database/data_source.db')
         cursor = conn.cursor()
 
         # Check for matching email and password
-        cursor.execute("SELECT * FROM user-table WHERE Email = ? AND Password = ?", (email_input, password_input))
+        cursor.execute("SELECT * FROM "user_table" WHERE Email = ? AND Password = ?", (email_input, password_input))
         result = cursor.fetchone()
         conn.close()
 
