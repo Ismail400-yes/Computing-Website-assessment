@@ -1,5 +1,6 @@
 .home_page{
     background-color: black;
+    overflow: hidden;
 }
 
 .navigation_top_bar {
@@ -47,22 +48,44 @@
 .chat_logos {
     display: flex;
     flex-direction: column;
-    margin: 0px;
+    justify-content: flex-start;
+    gap: 0px;
 }
 
 .chat_images {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    margin:0px;
+    margin-left: 2px;
     padding: 0px;
 }
 
 .chat_logos_split {
     width: 5px;
     height: 400px;
-    margin-left: 0px;
+    margin-left: 8px;
     margin-top: 0px;
+}
+
+.pagination_buttons_vertical {
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    margin-left: 2px;
+}
+
+.pagination_buttons_vertical a {
+    padding: 8px 16px;
+    margin: 0 5px;
+    background-color: #d87093;
+    color: white;
+    border-radius: 5px;
+}
+
+.pagination_buttons_vertical a:hover {
+    background-color: #c65c81;
 }
 
 .pagination_buttons_horizontal {
@@ -79,27 +102,6 @@
 }
 
 .pagination_buttons_horizontal a:hover {
-    background-color: #c65c81;
-}
-
-.pagination_buttons_vertical {
-    margin-top: 20px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-}
-
-.pagination_buttons_vertical a {
-    padding: 8px 16px;
-    margin: 0 5px;
-    background-color: #d87093;
-    color: white;
-    border-radius: 5px;
-}
-
-.pagination_buttons_vertical a:hover {
     background-color: #c65c81;
 }
 

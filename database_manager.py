@@ -1,6 +1,6 @@
 import sqlite3 as sql
 
-def listExtension(page=1, no_page=5):
+def listExtension(page=1, no_page=3):
   offset = (page - 1) * no_page
   con = sql.connect("database/data_source.db")
   cur = con.cursor()
