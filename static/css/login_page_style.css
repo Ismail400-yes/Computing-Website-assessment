@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    font-family: "Poppins", serif;
 }
 
 body {
@@ -18,12 +18,12 @@ body {
 
 .container {
     margin: 0 15px;
-    background-color: white;
 }
 
-.form_box {
+.form-box {
     width: 100%;
     max-width: 450px;
+    box-sizing: border-box;
     padding: 30px;
     background: #fff;
     border-radius: 10px;
