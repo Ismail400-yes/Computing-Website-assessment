@@ -23,7 +23,7 @@
             </div>
             {% for item in chat_pfp %}
             <div class="chat_item">
-                <img src="{{ item.image }}" alt="{{ item.title }}" class="chat_images">
+                <a href = "/messages_page"><img src = "{{ item.image }}" alt="{{ item.title }}" class="chat_images"></a>
             </div>
             {% endfor %}
             <div class="pagination_buttons_vertical">

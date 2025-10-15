@@ -1,0 +1,15 @@
+<h2>Messaging Page</h2>
+
+<form method="POST">
+  <input type="text" name="sender" placeholder="Your name" required>
+  <textarea name="content" placeholder="Type your message..." required></textarea>
+  <button type="submit">Send</button>
+</form>
+
+<hr>
+
+<div>
+  {% for sender, content, timestamp in messages %}
+    <p><strong>{{ sender }}</strong> ({{ timestamp }}): {{ content }}</p>
+  {% endfor %}
+</div>
