@@ -5,13 +5,13 @@ import database_manager
 app = Flask(__name__, template_folder='templates_1')
 app.secret_key = 'happy'
 
-@app.route('/')
+@app.route('/home_page')
 def index():
     page = int(request.args.get('page', 1))
     data = database_manager.listExtension(page=page)
     return render_template('home_page.html', chat_pfp=data, page=page)
 
-@app.route('/login_page', methods=['GET', 'POST'])
+@app.route('/', methods=['GET', 'POST'])
 def login():
     if request.method == 'POST':
         email_input = request.form.get['email'].strip()
