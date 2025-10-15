@@ -14,9 +14,9 @@
         <a href="/friends_list" class="friend_request_and_pending_button">Friend Requests & Pending</a>
         <a href="/settings_page"><img src="static/image/settings.png" alt="Settings" class="settings_icon"></a>
     </div>
-    <div class="chats_side_bar">
+    <div class="chats_display">
         <div class="chat_logos">
-            <div class="pagination_buttons">
+            <div class="pagination_buttons_horizontal">
                 {% if page > 1 %}
                 <a href="/?page={{ page - 1 }}">Previous</a>
                 {% endif %}
@@ -28,12 +28,37 @@
                 </div>
                 {% endfor %}
             </div>
-            <div class="pagination_buttons">
+            <div class="pagination_buttons_horizontal">
                 {% if chat_pfp|length == 5 %}
                 <a href="/?page={{ page + 1 }}">Next</a>
                 {% endif %}
             </div>
-            <img src="static/image/pale-violet-red_color.png" alt="line" class="chat_logos_split">
+        </div>
+        
+        <img src="static/image/pale-violet-red_color.png" alt="line" class="chat_logos_split">
+        
+        <h1 class = "explore_button">Explore</h1>
+        
+        <div class = "forum_explore">
+            <div class="pagination_buttons_vertical">
+                {% if page > 1 %}
+                <a href="/?page={{ page - 1 }}">←</a>
+                {% endif %}
+            </div>
+                {% for item in chat_pfp %}
+                <div class="forum_item">
+                    <img src="{{ item.image }}" alt="{{ item.title }}" class="chat_images">
+                    <div info_on_forum>
+                        <a href = list_of_friends_in
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            <div class="pagination_buttons_vertical">
+                {% if chat_pfp|length == 5 %}
+                <a href="/?page={{ page + 1 }}">→</a>
+                {% endif %}
+            </div>
         </div>
     </div>
 </body>

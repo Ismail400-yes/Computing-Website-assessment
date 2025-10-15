@@ -39,7 +39,7 @@
     height: auto;
 }
 
-.chats_side_bar {  
+.chats_display {  
     display: flex;
 }
 
@@ -64,12 +64,12 @@
     margin-top: 0px;
 }
 
-.pagination_buttons {
+.pagination_buttons_horizontal {
 margin-top: 20px;
 text-align: center;
 }
 
-.pagination_buttons a {
+.pagination_buttons_horizontal a {
 padding: 8px 16px;
 margin: 0 5px;
 background-color: #d87093;
@@ -77,6 +77,39 @@ color: white;
 border-radius: 5px;
 }
 
-.pagination_buttons a:hover {
+.pagination_buttons_horizontal a:hover {
 background-color: #c65c81;
+}
+
+.pagination_buttons_vertical {
+margin-top: 20px;
+text-align: center;
+}
+
+.pagination_buttons_vertical a {
+padding: 8px 16px;
+margin: 0 5px;
+background-color: #d87093;
+color: white;
+border-radius: 5px;
+}
+
+.pagination_buttons_vertical a:hover {
+background-color: #c65c81;
+}
+
+.forum_explore {
+    display: flex;
+}
+
+explore_button {
+    border: 5px solid palevioletred;
+    background-color: palevioletred;
+    color: white;
+    text-align:center;
+}
+
+info_on_forum {
+    border: 5px solid grey;
+    background-color: grey;
 }
