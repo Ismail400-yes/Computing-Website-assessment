@@ -21,7 +21,7 @@ def login():
         cursor = conn.cursor()
 
         # Check for matching email and password
-        cursor.execute("SELECT * FROM "user_table" WHERE Email = ? AND Password = ?", (email_input, password_input))
+        cursor.execute("SELECT * FROM user_table WHERE Email = ? AND Password = ?", (email_input, password_input))
         result = cursor.fetchone()
         conn.close()
 
