@@ -37,29 +37,33 @@
         
         <img src="static/image/pale-violet-red_color.png" alt="line" class="chat_logos_split">
         
-        <h1 class = "explore_button">Explore</h1>
+        <div class = "forum_page">
+            <h1 class = "explore_button">Explore</h1>
         
-        <div class = "forum_explore">
-            <div class="pagination_buttons_vertical">
-                {% if page > 1 %}
-                <a href="/?page={{ page - 1 }}">←</a>
-                {% endif %}
-            </div>
-                {% for item in chat_pfp %}
-                <div class="forum_item">
-                    <img src="{{ item.image }}" alt="{{ item.title }}" class="chat_images">
-                    <div info_on_forum>
-                        <a href = list_of_friends_in
-                    </div>
+            <div class = "forum_explore">
+                <div class="pagination_buttons_vertical">
+                    {% if page > 1 %}
+                    <a href="/?page={{ page - 1 }}">←</a>
+                        {% endif %}
                 </div>
-                {% endfor %}
+                    {% for item in chat_pfp %}
+                    <div class="forum_item">
+                        <img src="{{ item.image }}" alt="{{ item.title }}" class="chat_images">
+                        <div info_on_forum>
+                            <a href = "/list_of_friends"><img src = "static/image/plus_symbol.png" alt = "view_friends_in_chat"></a>
+                            <h2 class = "forum_explore_name">{{ item.title }}</h2>
+                            
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+                <div class="pagination_buttons_vertical">
+                    {% if chat_pfp|length == 5 %}
+                    <a href="/?page={{ page + 1 }}">→</a>
+                    {% endif %}
+                </div>
             </div>
-            <div class="pagination_buttons_vertical">
-                {% if chat_pfp|length == 5 %}
-                <a href="/?page={{ page + 1 }}">→</a>
-                {% endif %}
-            </div>
-        </div>
+        </div>    
     </div>
 </body>
 </html>

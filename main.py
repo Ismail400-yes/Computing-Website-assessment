@@ -23,5 +23,9 @@ def settings_page():
 def login_page():
     return render_template('login_page.html')
 
+@app.route('/list_of_friends_page')
+def login_page():
+    return render_template('login_page.html')
+
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=5000)

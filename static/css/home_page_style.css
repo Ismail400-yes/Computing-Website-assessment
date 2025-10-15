@@ -112,4 +112,5 @@ explore_button {
 info_on_forum {
     border: 5px solid grey;
     background-color: grey;
+    display: flex;
 }
