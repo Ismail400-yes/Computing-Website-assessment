@@ -19,7 +19,7 @@ def index():
 def login():
     if request.method == 'POST':
         email_input = request.form['email'].strip()
-        password_input = request.form['password']
+        password_input = request.form['password'].strip()
 
         # Connect to SQLite
         conn = sql.connect('data_source.db')
