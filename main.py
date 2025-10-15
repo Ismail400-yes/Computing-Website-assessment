@@ -24,7 +24,7 @@ def login():
         query = """
         SELECT Email, Password
         FROM "user_table"
-        WHERE Email = ? AND Password = ?
+        Email ? Password ?
         """
         cursor.execute(query, (email_input, password_input))
         result = cursor.fetchone()
