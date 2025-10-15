@@ -1,5 +1,6 @@
 <h2>Messaging Page</h2>
-
+<link rel="stylesheet" href="static/css/messages_page_style.css">
+<body>
 <form method="POST">
   <input type="text" name="sender" placeholder="Your name" required>
   <textarea name="content" placeholder="Type your message..." required></textarea>
@@ -13,3 +14,4 @@
     <p><strong>{{ sender }}</strong> ({{ timestamp }}): {{ content }}</p>
   {% endfor %}
 </div>
+</body>
