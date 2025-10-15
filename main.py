@@ -5,7 +5,11 @@ import database_manager
 
 app = Flask(__name__, template_folder='templates_1')
 
-@app.route('/')
+@app.route('/home_page')
+def home_page():
+    return render_template('home_page.html')
+
+@app.route('/home_page')
 def index():
     page = int(request.args.get('page', 1))
     data = database_manager.listExtension(page=page)
@@ -19,7 +23,7 @@ def friends_list():
 def settings_page():
     return render_template('settings_page.html')
 
-@app.route('/login_page')
+@app.route('/')
 def login_page():
     return render_template('login_page.html')
 
