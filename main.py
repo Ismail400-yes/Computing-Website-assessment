@@ -3,11 +3,6 @@ from flask import Flask, render_template, request, redirect,flash
 import database_manager
 
 app = Flask(__name__, template_folder='templates_1')
-app.secret_key = 'happy'
-
-@app.route('/')
-def home_page():
-    return render_template('home_page.html')
 
 @app.route('/home_page')
 def index():
@@ -15,7 +10,7 @@ def index():
     data = database_manager.listExtension(page=page)
     return render_template('home_page.html', chat_pfp=data, page=page)
 
-@app.route('/login_page', methods=['GET', 'POST'])
+@app.route('/', methods=['GET', 'POST'])
 def login():
     if request.method == 'POST':
         email_input = request.form['email'].strip()
@@ -48,14 +43,6 @@ def friends_list():
 @app.route('/settings_page')
 def settings_page():
     return render_template('settings_page.html')
-
-@app.route('/login_page')
-def login_page():
-    return render_template('login_page.html')
-
-@app.route('/list_of_friends_page')
-def list_of_friends_page():
-    return render_template('list_of_friends_page.html')
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=5000)
