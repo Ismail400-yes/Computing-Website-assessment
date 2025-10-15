@@ -15,25 +15,26 @@
         <a href="/settings_page"><img src="static/image/settings.png" alt="Settings" class="settings_icon"></a>
     </div>
     <div class="chats_side_bar">
-        <div class="pagination_buttons">
-            {% if page > 1 %}
-            <a href="/?page={{ page - 1 }}">Previous</a>
-            {% endif %}
-        </div>
         <div class="chat_logos">
-            {% for item in chat_pfp %}
-            <div class="chat_item">
-                <img src="{{ item.image }}" alt="{{ item.title }}" class="chat_images">
-                <p>{{ item.title }}</p>
+            <div class="pagination_buttons">
+                {% if page > 1 %}
+                <a href="/?page={{ page - 1 }}">Previous</a>
+                {% endif %}
             </div>
-            {% endfor %}
+                {% for item in chat_pfp %}
+                <div class="chat_item">
+                    <img src="{{ item.image }}" alt="{{ item.title }}" class="chat_images">
+                    <p>{{ item.title }}</p>
+                </div>
+                {% endfor %}
+            </div>
+            <div class="pagination_buttons">
+                {% if chat_pfp|length == 5 %}
+                <a href="/?page={{ page + 1 }}">Next</a>
+                {% endif %}
+            </div>
+            <img src="static/image/pale-violet-red_color.png" alt="line" class="chat_logos_split">
         </div>
-        <div class="pagination_buttons">
-            {% if chat_pfp|length == 5 %}
-            <a href="/?page={{ page + 1 }}">Next</a>
-            {% endif %}
-        </div>
-        <img src="static/image/pale-violet-red_color.png" alt="line" class="chat_logos_split">
     </div>
 </body>
 </html>
