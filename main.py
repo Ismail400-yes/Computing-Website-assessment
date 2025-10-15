@@ -3,6 +3,7 @@ from flask import Flask, render_template, request, redirect,flash
 import database_manager
 
 app = Flask(__name__, template_folder='templates_1')
+app.secret_key = 'happy'
 
 @app.route('/home_page')
 def index():
