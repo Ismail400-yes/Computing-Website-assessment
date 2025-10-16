@@ -122,3 +122,39 @@ If no username, password:
 
 ### Microsoft Lighthouse
 ![Lighthouse Analysis - Microsoft](Microsoft_Lighthouse.png)
+
+Do readme for lighthouse, info on my progress(journal).
+
+## Lighthouse Overview
+I am only going to do the login_page and the home_page, because they have the most prominent information in it.
+
+### Login page
+![Lighthouse Analysis - Microsoft Login Page](login_page_lighthouse/Microsoft.png) Microsoft
+
+![Lighthouse Analysis - Chrome Login Page](login_page_lighthouse/Chrome.png) Chrome
+
+Feedback to improve the login page is to remove unused javascript in performance, enhance the colour contrast in the background for accessibility, browser errors were logged to the console in best practices and needs a meta description for the SEO.
+
+What I know I can improve is to change the box for the login page to be more lighter than the background.
+
+### Home Page
+
+
+## Progress Tracker
+- End of term 3: I finished making the home_page page and started the friends_request. Most of it looked empty, because I need to add a lot of image links in the database for it to be displayed.
+- Holidays: Worked on the messaging page and login page.
+- Term 4 beginning: Finished making the login page and messaging page(inconsistent and a bit laggy).
+
+## Instructions
+Before trying to enter the web-app, just be aware that the login page is inconsistent in operation. If it doesn't work, you may have to restart the page, or open main.py again.
+
+First type in python main.py into the terminal. To enter the web-app, you would need to type ben.clark@email.com(this was randomly generated. I just though it was funny it randomised your name Mr Clark.) in the Email input box and BenC!ark#2023 into the password box. Press the Login button. What you will enter is the homepage. The logo takes you back to the home page, the arrows scroll between the different chats, and clicking on any of the images takes to the message page. To exit the message page, press the back space. on the top left corner of your screen. You can also press friend requests and the cog in the homepage, but there aren't a lot of info on them. Most of it was code in the repository, but inconsistent in working. This is where I'll address problems.
+
+## Issues
+I had previous issues of the code with the message tab and the login page not working, but I think it has started to work again. The bigger problem was my work with the messaging page itself, where sometimes it would accidentally store a message from a user without resetting, so when trying to leave the page, it processes as the message was never sent to the others in the chat, so it won't let you leave the page, but repetitively store, then send the message. This might have been, because I didn't code a way to clear the details of the message once it was sent, but I probably should. It might be that the message automatically doesn't reset once it was sent. Another issue was how the user had to insert the name and how it wasn't based off of the messager's account. This could've been fixed with referring to the sql database and using a query to isolate the user with the conversation_table's id and the user, but I'm not too sure itself how to code it. 
+
+## Acknowledgements
+I had a few issues with my code that I didn't know how to solve, so I would use copilot sometimes to ask me to help fix the issues, or when I watched a youtube tutorial on extending my knowledge in HTML, CSS, Python and Javascript, I would ask copilot to help me unpack and understand it, which was partly used in my own code.
+
+The youtube video(s) I watched that helped me the most and was implemented in my code are:
+- https://www.youtube.com/watch?v=LiomRvK7AM8 (I didn't use php. I only looked at the javascript for interchanging elements in the page. E.g. display:none; --> display: block;)
