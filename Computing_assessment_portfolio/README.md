@@ -139,7 +139,6 @@ What I know I can improve is to change the box for the login page to be more lig
 
 ### Home Page
 
-
 ## Progress Tracker
 - End of term 3: I finished making the home_page page and started the friends_request. Most of it looked empty, because I need to add a lot of image links in the database for it to be displayed.
 - Holidays: Worked on the messaging page and login page.
